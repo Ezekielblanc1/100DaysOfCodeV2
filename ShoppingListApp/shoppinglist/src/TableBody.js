@@ -6,6 +6,9 @@ const TableBody = props => {
       <tr key={i}>
         <td>{char.name}</td>
         <td>{char.job}</td>
+        <td>
+          <button onClick={() => props.removeCharacter(i)}>Delete</button>
+        </td>
       </tr>
     );
   });
